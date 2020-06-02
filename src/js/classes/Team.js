@@ -17,10 +17,6 @@ export default class Team {
   }
 
   toArray() {
-    const result = [];
-    for (const hero of this.members) {
-      result.push(hero);
-    }
-    return result;
+    return Array.from(this.members);
   }
 }
